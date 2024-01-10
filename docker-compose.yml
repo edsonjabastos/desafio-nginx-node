@@ -24,6 +24,7 @@ services:
       context: ./node
     volumes:
       - ./node:/app
+      - /app/node_modules
     networks:
       - nginx-node
     tty: true
